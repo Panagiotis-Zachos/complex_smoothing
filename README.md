@@ -1,5 +1,11 @@
 # Complex Smoothing
  MATLAB functions that implement different smoothing algorithms
+ 
+This is the **_official_** code for the paper by Hatziantoniou, P. D., & Mourjopoulos, J. N. titled Generalized fractional-octave smoothing of audio and acoustic responses.
+
+This code was created and endorsed by members of [Audio and Acoustic Technology group](http://audiogroup.ece.upatras.gr/), Wire Communications Laboratory in the University of Patras, Greece were the research concerning the complex smoothing was performed.
+
+The code was originally created by the first author of the paper, Hatziantoniou, P. D. and later edited and updated to work with current MATLAB versions by me (Panagiotis Zachos)
 
 The main function is `complexSmoothing.m` and accepts the following arguments:
  - irIn: Time domain impulse response
