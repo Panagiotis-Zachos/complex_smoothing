@@ -1,7 +1,17 @@
 # Complex Smoothing
  MATLAB functions that implement different smoothing algorithms
 
-
+The main function is `complexSmoothing.m` and accepts the following arguments:
+ - irIn: Time domain impulse response
+ - smoothMethod: Select between the following options
+   - `'spectrum'` : smoothing on magnitude spectrum
+   - `'power'` : smoothing on power spectrum
+   - `'db'` : smoothing on spectral magnitude in dB
+   - `'phase'` : smoothing on phase
+   - `'complex'` : smoothing on the real and imaginary parts of spectrum
+   - `'mixed'` : build the spectrum from smoothing the magnitude and phase separately
+ - smoothFactor: Define shape of smoothing window, 1 corresponds to rectangular window, <1 corresponds to weighted averaging
+ - oct: The octave fraction (size of window) as a double, 1/3 for 1/3-octave etc.
 
 If you use this code, please cite the following paper:
 
