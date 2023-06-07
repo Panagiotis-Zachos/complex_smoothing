@@ -7,7 +7,7 @@ oct = 1/3;
 
 [ir, fs] = audioread('test_data\impulse.wav');
 
-[cs_ir, ~] = complexSmoothing(ir, SmoothMethod, Smfactor, oct);
+[cs_ir, ~] = complexSmoothing(ir);
 
 orig = getSpec(ir, fs);
 origS = getSpec(cs_ir, fs);

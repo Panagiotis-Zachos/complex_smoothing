@@ -1,6 +1,6 @@
 function [irSmoothed, specOut] = complexSmoothing(irIn, smoothingMethod, smoothFactor, oct) 
 
-%   Funcion complex_smoothnig
+%   Funcion complexSmoothnig
 %   created by Panagiotis (Panos) Hatziantoniou
 %   updated by Panagiotis Zachos
 %   Outputs:  - irSmoothed: Time domain impulse respone after spectral smoothing (samples)
@@ -24,7 +24,7 @@ function [irSmoothed, specOut] = complexSmoothing(irIn, smoothingMethod, smoothF
 
 arguments
     irIn (1,:) {mustBeNumeric}
-    smoothingMethod {mustBeMember(smoothingMethod, {'spectrum', 'power', 'db', 'phase', 'complex', 'mixed'})}
+    smoothingMethod {mustBeMember(smoothingMethod, {'spectrum', 'power', 'db', 'phase', 'complex', 'mixed'})} = 'spectrum'
     smoothFactor (1,1) {mustBeNumeric} = 0.99
     oct (1,1) {mustBeNumeric} = 1/6
 end
@@ -82,4 +82,4 @@ specOut(Fn+1:NFFT) = flip(real(specOut(2:Fn-1)))+1i.*(-1).*flip(imag(specOut(2:F
 
 irSmoothed = real(ifft(specOut));
    
-end  
+end
