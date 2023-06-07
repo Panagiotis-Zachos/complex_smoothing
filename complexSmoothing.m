@@ -5,11 +5,11 @@ function [irSmoothed, specOut] = complexSmoothing(irIn, smoothingMethod, smoothF
 %   updated by Panagiotis Zachos
 %   Outputs:  - irSmoothed: Time domain impulse respone after spectral smoothing (samples)
 %             - specOut: Smoothed Spectrum (complex samples) 
-%   Inputs:   - ir: Time domain original impulse response (samples)
+%   Inputs:   - irIn: Time domain original impulse response (samples)
 %             - smoothMethod: Parameter for smoothing method selection. 
 %                            'spectrum' : smoothing on spectral magnitude (meter)
-%                            'power'    : smoothing on spectral dB scaled magnitude 
-%                            'db'       : smoothing on Power spectrum 
+%                            'power'       : smoothing on Power spectrum 
+%                            'db'    : smoothing on spectral dB scaled magnitude 
 %                            'phase'    : smoorthing only on phase 
 %                            'complex'  : Complex Smoothing i.e. smoothng on spectral real part 
 %                                         and imaginary part       
