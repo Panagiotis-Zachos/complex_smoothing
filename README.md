@@ -19,7 +19,11 @@ The main function is `complexSmoothing.m` and accepts the following arguments:
  - smoothFactor: Define shape of smoothing window, 1 corresponds to rectangular window, <1 corresponds to weighted averaging
  - oct: The octave fraction (size of window) as a double, 1/3 for 1/3-octave etc.
 
-If you use this code, please cite the following paper:
+If you use this code, please cite the following paper as well as this repository:
+
+
+[![DOI](https://zenodo.org/badge/650545083.svg)](https://zenodo.org/badge/latestdoi/650545083)
+
 
 Hatziantoniou, P. D., & Mourjopoulos, J. N. (2000). Generalized fractional-octave smoothing of audio and acoustic responses. Journal of the Audio Engineering Society, 48(4), 259-280.
 
